@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  calculator:
+    build:
+      context: ./calculator
+    ports:
+      - "8080:8080"
+    container_name: calculator
+    
+
+  vprofile:
+    build:
+      context: ./vprofile
+    ports:
+      - "8081:8080"
+    restart: always
+    container_name: vprofile
+   
